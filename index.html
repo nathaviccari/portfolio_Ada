@@ -1,171 +1,191 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/a_proyecto-1/style/style.css">
-    <title>Mi Portafolio</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+        <title>Mi Portafolio</title>
+    </head>
 
-<body>
-    <header>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu-nav">
+                    <li class="menu-link"> <a href="#Hola">Hola</a>
+                    </li>
+                    <li class="menu-link"> <a href="# Conocimientos">Conocimientos</a>
+                    </li>
+                    <li class="menu-link"><a href="#Proyectos">Proyectos</a>
+                    </li>
+                    <button class="menu-btn"> <a href="#contact"> Contacto</a>
+                    </button>
+                </ul>
+            </nav>
+        </header>
 
-        <nav>
-            <ul>
-                <li>
-                    Hola
-                </li>
-                <li>
-                    Conocimientos
-                </li>
-                <li>
-                    Proyectos
-                </li>
-                <button>
-                    Contactos
-                </button>
-            </ul>
-        </nav>
-
-    </header>
-
-    <section>
-        <div>
-            <div>
-                <h2>Hola Soy Nathalia</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error odit animi repudiandae pariatur!
-                    Minima, qui necessitatibus nihil accusantium ratione maiores dicta laboriosam. Iste nostrum, quis et
-                    ipsam totam maiores nesciunt!</p>
-                <button>Lo que Hago</button>
+        <section class="hola">
+            <div class="section-hola">
+                <div>
+                    <h2>Hola Soy Nathalia</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Error odit animi repudiandae pariatur!
+                        Minima, qui necessitatibus nihil accusantium ratione
+                        maiores dicta laboriosam. Iste nostrum, quis et
+                        ipsam totam maiores nesciunt!</p>
+                    <button>Lo que Hago</button>
+                </div>
+                <img
+                    src="https://imagenes.t13.cl/images/original/2018/01/1515518836-perro.jpg"
+                    width="400" height="300">
             </div>
-            <img src="https://imagenes.t13.cl/images/original/2018/01/1515518836-perro.jpg" width="400" height="300">
-        </div>
-    </section>
-    <section>
-        <div>
-            <h2>Mis Conocimientos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, inventore.</p>
-        </div>
+        </section>
 
-        <div>
-            <p>HTML 5</p>
-        </div>
-        <div>
-            <p>CSS 3</p>
-        </div>
-        <div>
-            <p>SASS</p>
-        </div>
-        <div>
-            <p>JavaScript</p>
-        </div>
-        <div>
-            <p>React</p>
-        </div>
-        <div>
-            <p>Git</p>
-        </div>
-        </div>
-    </section>
-    <section>
-        <div>
-            <blockquote>Blah Blah Blah</blockquote>
-        </div>
-    </section>
-    <section>
-        <div>
-            <h2>Mis Proyectos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, inventore.</p>
-        </div>
+        <section class="conocimientos">
 
-        <div>
-            <p>Portafolio</p>
-        </div>
-        <div>
-            <p>Generador de Memes</p>
-        </div>
-        <div>
-            <p>Match 3</p>
-        </div>
-        <div>
-            <p>Controlador de Gastos</p>
-        </div>
-        <div>
-            <p>Administrador de reuniones</p>
-        </div>
-        <div>
-            <p>Todo App</p>
-        </div>
-        <div>
-            <p>Buscador de películas</p>
-        </div>
-        </div>
-    </section>
-    <section>
-        <div>
-            <div>
-                <h2>Contactame</h2>
-                <p>Lorem ipsum dolor sit</p>
+            <div class="section-conocimientos">
+                <h2>Mis Conocimientos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+                    inventore.</p>
+            </div>
+
+            <div class="flex-conocimientos">
+                <div class="box-conocimientos">
+                    <p>HTML 5</p>
+                </div>
+
+
+                <div class="box-conocimientos">
+                    <p>CSS 3</p>
+                </div>
+
+
+                <div class="box-conocimientos">
+                    <p>SASS</p>
+                </div>
+
+
+                <div class="box-conocimientos">
+                    <p>JavaScript</p>
+                </div>
+
+
+                <div class="box-conocimientos">
+                    <p>React</p>
+                </div>
+
+
+                <div class="box-conocimientos">
+                    <p>Git</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="quote">
+            <div class="section-quote">
+                <blockquote>Blah Blah Blah</blockquote>
+            </div>
+        </section>
+
+        <section class="proyectos">
+
+            <div class="section-proyectos">
+                <h2>Mis Proyectos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+                    inventore.</p>
+            </div>
+
+            <div class="flex-proyectos">
+                <div class="box-proyectos">
+                    <p>Portafolio</p>
+                </div>
+                <div class="box-proyectos">
+                    <p>Generador de Memes</p>
+                </div>
+                <div class="box-proyectos">
+                    <p>Match 3</p>
+                </div>
+                <div class="box-proyectos">
+                    <p>Controlador de Gastos</p>
+                </div>
+                <div class="box-proyectos">
+                    <p>Administrador de reuniones</p>
+                </div>
+                <div class="box-proyectos">
+                    <p>Todo App</p>
+                </div>
+                <div class="box-proyectos">
+                    <p>Buscador de películas</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="contacto">
+            <div class="section-contacto">
+                <div class="box-contactame">
+                    <h2>Contactame</h2>
+                    <p>Lorem ipsum dolor sit</p>
+                    <ul>
+                        <li>
+                            twitter
+                        </li>
+                        <li>
+                            git
+                        </li>
+                        <li>
+                            linkedin
+                        </li>
+                        <li>
+                            email
+                        </li>
+                    </ul>
+                </div>
+                <div class="box-escribime">
+                    <h2>Escribime</h2>
+                    <form action="">
+                        <div>
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div>
+                            <label for="surname">Apellido</label>
+                            <input type="text" name="surname" id="surname">
+                        </div>
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div>
+                            <label for="menssage">Mensaje</label>
+                            <textarea name="menssage" id="menssage" cols="30"
+                                rows="10"></textarea>
+                        </div>
+                        <input class="btn" type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav>
                 <ul>
                     <li>
-                        twitter
+                        Hola
                     </li>
                     <li>
-                        git
+                        Conocimientos
                     </li>
                     <li>
-                        linkedin
+                        Proyectos
                     </li>
                     <li>
-                        email
+                        Contacto
                     </li>
                 </ul>
-            </div>
-            <div>
-                <h2>Escribime</h2>
-                <form action="">
-                    <div>
-                        <label for="name">Nombre</label>
-                        <input type="text" name="name" id="name">
-                    </div>
-                    <div>
-                        <label for="surname">Apellido</label>
-                        <input type="text" name="surname" id="surname">
-                    </div>
-                    <div>
-                        <label for="email">E-mail</label>
-                       <input type="email" name="email" id="email">
-                    </div>
-                    <div>
-                        <label for="menssage">Mensaje</label>
-                       <textarea name="menssage" id="menssage" cols="30" rows="10"></textarea>
-                    </div>
-                    <input class="btn" type="submit" value="Enviar" >
-                </form>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <ul>
-                <li>
-                    Hola
-                </li>
-                <li>
-                    Conocimientos
-                </li>
-                <li>
-                    Proyectos
-                </li>
-                <li>
-                    Contacto
-                </li>
-            </ul>
-        </nav>
-        <p>Hecho por Natha</p>
-    </footer>
-</body>
+            </nav>
+            <p>Hecho por Natha</p>
+        </footer>
+    </body>
 
 </html>
