@@ -220,10 +220,28 @@ button {
 *************************** */
 
 
-.quote-principal {
+.quote__section {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding: 200px;
+}
+
+.quote__text{
+    font-size: 3rem;
+}
+
+.quote__author{
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: 5% ;
+}
+
+.quote__icon{
+    color: black;
+    font-size: 4rem;
+    margin-bottom: 5%;
 }
 
 /* ************************
