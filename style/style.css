@@ -22,15 +22,96 @@ a:visited {
     color: #000;
 }
 
+.menu--burger {
+    display: none;
+}
+
+/* ************************
+********* Buttons **********
+*************************** */
+
 button {
     background: transparent;
     border: 0px solid transparent;
 }
 
+.btn {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 2px solid;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    touch-action: manipulation;
+}
 
-/***** Header ******/
+.btn:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
 
-.menu-nav {
+.link--yellow:hover {
+    color: #FFD923;
+    transition: 0.3s;
+}
+
+.link--green:hover {
+    color: #1EB081;
+    transition: 0.3s;
+}
+
+.link--orange:hover {
+    color: #FF5B33;
+    transition: 0.3s;
+}
+
+.link--blue:hover {
+    color: #008CB6;
+}
+
+.btn--s {
+    padding: 0.5% 1%;
+    margin: 1.7% 3% 0 0;
+    height: 10%;
+}
+
+.btn--m {
+    background-color: #FF5B33;
+    padding: 1% 5%;
+    margin: 3% 0;
+    height: 10%;
+}
+
+
+/* ************************
+******* Modificator *******
+*************************** */
+
+.title--mod {
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 2.375em;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin-top: 5%;
+}
+
+.text--mod {
+    font-size: 1em;
+    margin-top: 2%;
+}
+
+.text--box {
+    font-size: 1.25em;
+    margin-top: 5%;
+}
+
+/* ************************
+********* Header **********
+*************************** */
+
+.menu__nav {
     background-color: #F2F2F2;
     display: flex;
     justify-content: flex-end;
@@ -42,149 +123,112 @@ button {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-.menu-nav li,
-button {
+.menu__link {
     font-size: 0.875rem;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 1%;
     margin-right: 4em;
-}
-
-.menu-link a {
     color: #000;
 }
 
-.active_yellow:hover {
-    color: #FFD923;
-    transition: 0.3s;
-}
+/* ************************
+****** Hello Section *******
+*************************** */
 
-.active_green:hover {
-    color: #1EB081;
-    transition: 0.3s;
-}
-
-.active_orange:hover {
-    color: #FF5B33;
-    transition: 0.3s;
-}
-
-.menu-btn {
-    font-weight: bolder;
-    border: 3px solid;
-    padding: 0.4%;
-    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-    position: relative;
-    user-select: none;
-    touch-action: manipulation;
-}
-
-.menu-btn:active {
-    box-shadow: 0px 0px 0px 0px;
-    top: 5px;
-    left: 5px;
-}
-
-.menu-btn a:hover {
-    color: #008CB6;
-}
-
-/***** Fin Header ******/
-
-
-/***** Section Hola ******/
-
-.hola {
-    /* background-color: red; */
+.hello {
     width: 100%;
 }
 
-.section-hola {
-    /* background-color: green; */
+.hello__section {
     display: flex;
     padding: 10% 5%;
     margin: 0 2%;
 }
 
-.hola-container {
-    /* background-color: blue; */
+.hello__bio {
     padding: 5% 20% 0 0;
 }
 
-.hola-titulo {
+.hello__title {
     font-size: 2em;
     margin-bottom: 5%;
 }
 
-.hola-nombre {
+.hello__name {
     color: #000000;
     font-size: 4em;
     letter-spacing: 1px;
     margin-bottom: 5%;
 }
 
-.hola-texto {
+.hello__text {
     font-size: 1.2rem;
     margin: 0 2% 5% 0;
 }
 
-.hola-img {
+.hello_img {
     padding: 5% 0;
 }
 
-.hola-btn {
-    background-color: #FF5B33;
-    font-weight: bold;
-    border: 3px solid;
-    padding: 3% 6%;
-    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-    position: relative;
-    touch-action: manipulation;
-}
 
-.hola-btn:active {
-    box-shadow: 0px 0px 0px 0px;
-    top: 5px;
-    left: 5px;
-}
+/* ************************
+**** Knowledge Section *****
+*************************** */
 
-/***********/
-
-.section-conocimientos {
+.knowledge__section {
+    background-color: #F6F6F6;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    background-color: gold;
+    height: auto;
 }
 
-.flex-conocimientos {
+.knowledge__text {
+    text-align: center;
+    width: 30%;
+}
+
+.knowledge__thumbnails {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
-    width: 100%;
+    flex-wrap: wrap;
+    margin: 4%;
+    max-width: 70%;
 }
 
-.box-conocimientos {
-    border: 3px outset gold;
-    border-radius: 8px;
+.knowledge__box {
+    background-color: #fff;
+    border: 1px outset black;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    margin: 12px;
-    padding: 15px;
+    width: 20%;
+    margin: 2%;
+    padding: 4%;
+    transition: 0.3s ease-in-out;
 }
 
-/***********/
+.knowledge__box:hover {
+    transform: translateY(-5px);
+    box-shadow: 7px 7px 0px -1px rgba(0,0,0,1);
+}
 
-.section-quote {
+/* ************************
+****** Quote Section ******
+*************************** */
+
+
+.quote-principal {
     display: flex;
     justify-content: center;
     padding: 200px;
 }
 
-/***********/
+/* ************************
+***** Projects Section *****
+*************************** */
 
 /* * repeticion */
 .section-proyectos {
@@ -209,8 +253,11 @@ button {
     margin: 10px;
 }
 
-/***********/
-.section-contacto {
+/* ************************
+***** Contact Section *****
+*************************** */
+
+.contacto-principal {
     display: flex;
 }
 
@@ -222,7 +269,9 @@ button {
     margin: 100px;
 }
 
-/***********/
+/* ************************
+********** Footer *********
+*************************** */
 
 footer {
     display: flex;
@@ -234,4 +283,34 @@ footer>nav>ul {
     display: flex;
     margin: 10px;
     align-self: center;
+}
+
+
+@media screen and (max-width: 800px) {
+    .menu__link,
+    .menu__btn {
+        display: none;
+    }
+
+    .menu--burger {
+        display: block;
+        color: #292929;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 2em;
+        padding: 1rem;
+    }
+
+    .hello__section, .knowledge__section, .knowledge__text{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .hello__bio, .hello__img {
+        margin-top: 10%;
+    }
+
+    .knowledge__box{
+      width: 100%;
+    }
 }

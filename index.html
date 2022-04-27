@@ -5,89 +5,103 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      />
         <link rel="stylesheet" href="style/style.css">
         <title>Mi Portafolio</title>
     </head>
 
     <body>
         <header>
-         
-            <nav>
-                <ul class="menu-nav">
-                    <li class="menu-link"> <a class="active_yellow" href="#hola">Hola</a>
+            <nav class="menu">
+                <ul class="menu__nav">
+                    <li class="menu__link"> <a class="link--yellow"
+                            href="#hola">Hola</a>
                     </li>
-                    <li class="menu-link"> <a class="active_green"  href="#conocimientos">Conocimientos</a>
+                    <li class="menu__link"> <a class="link--green"
+                            href="#conocimientos">Conocimientos</a>
                     </li>
-                    <li class="menu-link"><a class="active_orange"  href="#proyectos">Proyectos</a>
+                    <li class="menu__link"><a class="link--orange"
+                            href="#proyectos">Proyectos</a>
                     </li>
-                    <button class="menu-btn"> <a href="#contacto"> Contacto</a>
+                    <button class="menu__btn btn btn--s"> <a class="link--blue"
+                            href="#contacto"> <span class="btn__text">Contacto</span></a>
                     </button>
+                    <div class="menu--burger">
+                        <i class="fas fa-bars"></i>
+                      </div>
                 </ul>
             </nav>
-         
+
         </header>
 
-        <section class="hola" id="hola">
-            <div class="section-hola">
-                <div class="hola-container">
-                    <h2 class="hola-titulo">¡Hola! Soy</h2>
-                    <h3 class="hola-nombre">Nathalia Viccari,</h3>
-                    <p class="hola-texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Error odit animi repudiandae pariatur!
-                        Minima, qui necessitatibus nihil accusantium ratione
-                        maiores dicta laboriosam. Iste nostrum, quis et
-                        ipsam totam maiores nesciunt!</p>
-                    <button class="hola-btn"><a href="#proyectos"> Lo que Hago</a></button>
+        <section class="hello" id="hola">
+            <div class="hello__section">
+                <div class="hello__bio">
+                    <h2 class="hello__title">¡Hola! Soy</h2>
+                    <h3 class="hello__name">Natha Viccari,</h3>
+                    <p class="hello__text">Iniciante en desarrolo Web, me gusta los memes, soy curiosa
+                        tiempo completo y estoy en busqueda del mejor flan de la ciudad.</p>
+                    <button class="btn btn--m"><a href="#proyectos"> Lo que Hago</a></button>
                 </div>
-                <img class="hola-img"
+                <img class="hello__img"
                     src="https://imagenes.t13.cl/images/original/2018/01/1515518836-perro.jpg"
                     width="400" height="300">
             </div>
         </section>
 
-        <section class="conocimientos" id="conocimientos">
+        <section class="knowledge" id="conocimientos">
 
-            <div class="section-conocimientos">
-                <h2>Mis Conocimientos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
-                    inventore.</p>
-            </div>
+            <div class="knowledge__section">
+                <h2 class="knowledge__title title--mod">Mis Conocimientos</h2>
+                <p class="knowledge__text text--mod">Estoy estudiando para dominar estos lenguajes de programacion con ADA:
+                </p>
 
-            <div class="flex-conocimientos">
-                <div class="box-conocimientos">
-                    <p>HTML 5</p>
-                </div>
-
-
-                <div class="box-conocimientos">
-                    <p>CSS 3</p>
-                </div>
+                <div class="knowledge__thumbnails">
+                    <div class="knowledge__box">
+                        <img src="./img/html5.png" alt="">
+                        <span class="text--box">HTML5</span>
+                    </div>
 
 
-                <div class="box-conocimientos">
-                    <p>SASS</p>
-                </div>
+                    <div class="knowledge__box">
+                        <img src="./img/css3.png" alt="">
+                        <span class="text--box">CSS3</span>
+                    </div>
 
 
-                <div class="box-conocimientos">
-                    <p>JavaScript</p>
-                </div>
+                    <div class="knowledge__box">
+                        <img src="./img/sass.png" alt="">
+                        <span class="text--box">Sass</span>
+                    </div>
 
 
-                <div class="box-conocimientos">
-                    <p>React</p>
-                </div>
+                    <div class="knowledge__box">
+                        <img src="./img/js.png" alt="">
+                        <span class="text--box">JavaScript</span>
+                    </div>
 
 
-                <div class="box-conocimientos">
-                    <p>Git</p>
+                    <div class="knowledge__box">
+                        <img src="./img/react.png" alt="">
+                        <span class="text--box">React</span>
+                    </div>
+
+
+                    <div class="knowledge__box">
+                        <img src="./img/git.png" alt="">
+                        <span class="text--box">Git</span>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- ******* VIDEO ?*******-->
 
-        <section class="quote">
-            <div class="section-quote">
+        <section class="section-quote">
+            <div class="quote-principal">
                 <blockquote>Blah Blah Blah</blockquote>
             </div>
         </section>
@@ -95,8 +109,9 @@
         <section class="proyectos" id="proyectos">
 
             <div class="section-proyectos">
-                <h2>Mis Proyectos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+                <h2 class="title--mod">Mis Proyectos</h2>
+                <p class="text--mod">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Vel,
                     inventore.</p>
             </div>
 
@@ -125,10 +140,10 @@
 
             </div>
         </section>
-        <section class="contacto" id="contacto">
-            <div class="section-contacto">
+        <section class="section-contacto" id="contacto">
+            <div class="contacto-principal">
                 <div class="box-contactame">
-                    <h2>Contactame</h2>
+                    <h2 class="title--mod">Contactame</h2>
                     <p>Lorem ipsum dolor sit</p>
                     <ul>
                         <li>
@@ -146,7 +161,7 @@
                     </ul>
                 </div>
                 <div class="box-escribime">
-                    <h2>Escribime</h2>
+                    <h2 class="title--mod">Escribime</h2>
                     <form action="">
                         <div>
                             <label for="name">Nombre</label>
