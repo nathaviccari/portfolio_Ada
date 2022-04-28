@@ -217,11 +217,14 @@ button {
     box-shadow: 7px 7px 0px -1px rgba(0, 0, 0, 1);
 }
 
+/* ************************
+*********** GIF ***********
+*************************** */
 
 .gif {
-    background-color: white;
     text-align: center;
-    padding: 3em;
+    background-color: white;
+padding: 2%;
 }
 
 .gif__animation {
@@ -346,16 +349,17 @@ footer>nav>ul {
         margin-top: 10%;
     }
 
-    .knowledge__text {
+    .knowledge__title, .knowledge__text {
         width: 80%;
     }
 
     .knowledge__box {
         width: 35%;
-        margin: 3%;
+        margin: 2%;
+        padding: 3%;
     }
 
-    .gif__animation {
+    .gif {
         width: 100vw;
     }
 
@@ -364,7 +368,9 @@ footer>nav>ul {
         text-align: center;
     }
 
-    .proyectos, .section-contacto, footer{
+    .proyectos,
+    .section-contacto,
+    footer {
         display: none;
     }
 }
