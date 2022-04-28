@@ -318,7 +318,7 @@ footer>nav>ul {
 }
 
 
-@media screen and (max-width: 800px) {
+@media (max-width: 480px) {
 
     .menu__link,
     .menu__btn {
