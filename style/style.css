@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +12,7 @@ html {
 body {
     background-color: #F2F2F2;
     color: #292929;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -147,7 +149,7 @@ button {
 }
 
 .hello__bio {
-    padding: 5% 20% 0 0;
+    padding: 2% 10% 0 0;
 }
 
 .hello__title {
@@ -156,9 +158,9 @@ button {
 }
 
 .hello__name {
+    font-family: 'Fredoka One';
     color: #000000;
-    font-size: 4em;
-    letter-spacing: 1px;
+    font-size: 3.66em;
     margin-bottom: 5%;
 }
 
@@ -212,8 +214,20 @@ button {
 
 .knowledge__box:hover {
     transform: translateY(-5px);
-    box-shadow: 7px 7px 0px -1px rgba(0,0,0,1);
+    box-shadow: 7px 7px 0px -1px rgba(0, 0, 0, 1);
 }
+
+
+.gif {
+    background-color: white;
+    text-align: center;
+    padding: 3em;
+}
+
+.gif__animation {
+    width: auto;
+}
+
 
 /* ************************
 ****** Quote Section ******
@@ -228,17 +242,17 @@ button {
     padding: 200px;
 }
 
-.quote__text{
+.quote__text {
     font-size: 3rem;
 }
 
-.quote__author{
+.quote__author {
     font-size: 1rem;
-    font-weight: bolder;
-    margin-top: 5% ;
+    font-weight: 800;
+    margin-top: 5%;
 }
 
-.quote__icon{
+.quote__icon {
     color: black;
     font-size: 4rem;
     margin-bottom: 5%;
@@ -305,6 +319,7 @@ footer>nav>ul {
 
 
 @media screen and (max-width: 800px) {
+
     .menu__link,
     .menu__btn {
         display: none;
@@ -319,16 +334,33 @@ footer>nav>ul {
         padding: 1rem;
     }
 
-    .hello__section, .knowledge__section, .knowledge__text{
+    .hello__section,
+    .knowledge__section,
+    .knowledge__text {
         flex-wrap: wrap;
         width: 100%;
     }
 
-    .hello__bio, .hello__img {
+    .hello__bio,
+    .hello__img {
         margin-top: 10%;
     }
 
-    .knowledge__box{
-      width: 100%;
+    .knowledge__text {
+        width: 80%;
+    }
+
+    .knowledge__box {
+        width: 35%;
+        margin: 3%;
+    }
+
+    .gif__animation {
+        width: 100vw;
+    }
+
+    .quote__section {
+        padding: 40% 3%;
+        text-align: center;
     }
 }
