@@ -107,6 +107,7 @@ button {
 .text--box {
     font-size: 1.25em;
     margin-top: 5%;
+    font-weight: bolder;
 }
 
 /* ************************
@@ -175,10 +176,11 @@ button {
 
 
 /* ************************
-**** Knowledge Section *****
+* Knowledge / Projects Section *
 *************************** */
 
-.knowledge__section {
+.knowledge__section,
+.projects__section {
     background-color: #F6F6F6;
     display: flex;
     flex-direction: column;
@@ -187,12 +189,14 @@ button {
     height: auto;
 }
 
-.knowledge__text {
+.knowledge__text,
+.projects__text {
     text-align: center;
-    width: 30%;
+    width: 60%;
 }
 
-.knowledge__thumbnails {
+.knowledge__thumbnails,
+.projects__thumbnails {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -217,6 +221,31 @@ button {
     box-shadow: 7px 7px 0px -1px rgba(0, 0, 0, 1);
 }
 
+.projects__box {
+    background-color: #fff;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    margin: 2%;
+    padding: 4%;
+    transition: 0.3s ease-in-out;
+}
+
+.projects__box:hover {
+    outline: 2px outset black;
+    transform: scale(1.1);
+}
+
+.projects__box:active {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.projects__img {
+    width: 200px;
+}
+
 /* ************************
 *********** GIF ***********
 *************************** */
@@ -224,7 +253,7 @@ button {
 .gif {
     text-align: center;
     background-color: white;
-padding: 2%;
+    padding: 2%;
 }
 
 .gif__animation {
@@ -247,6 +276,7 @@ padding: 2%;
 
 .quote__text {
     font-size: 3rem;
+    text-align: center;
 }
 
 .quote__author {
@@ -259,33 +289,6 @@ padding: 2%;
     color: black;
     font-size: 4rem;
     margin-bottom: 5%;
-}
-
-/* ************************
-***** Projects Section *****
-*************************** */
-
-/* * repeticion */
-.section-proyectos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    background-color: gold;
-}
-
-.flex-proyectos {
-    display: flex;
-    justify-content: center;
-}
-
-.box-proyectos {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 7px;
-    margin: 10px;
 }
 
 /* ************************
@@ -321,7 +324,19 @@ footer>nav>ul {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 280px) {
+    .title--mod {
+        font-size: 1.875em;
+
+    }
+
+    .text--mod {
+        font-size: 0.9375em;
+    }
+
+    .text--box {
+        font-size: 1em;
+    }
 
     .menu__link,
     .menu__btn {
@@ -337,9 +352,14 @@ footer>nav>ul {
         padding: 1rem;
     }
 
-    .hello__section,
+    .hello__section {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
     .knowledge__section,
-    .knowledge__text {
+    .knowledge__text,
+    .projects__section {
         flex-wrap: wrap;
         width: 100%;
     }
@@ -349,18 +369,28 @@ footer>nav>ul {
         margin-top: 10%;
     }
 
-    .knowledge__title, .knowledge__text {
+    .knowledge__title,
+    .knowledge__text,
+    .projects__title,
+    .projects__text {
         width: 80%;
+        text-align: center;
     }
 
     .knowledge__box {
-        width: 35%;
+        width: 100%;
         margin: 2%;
         padding: 3%;
     }
 
-    .gif {
-        width: 100vw;
+    .projects__box {
+        width: 45%;
+        margin: 2%;
+        padding: 3%;
+    }
+
+    .gif__animation {
+        width: 100%;
     }
 
     .quote__section {
