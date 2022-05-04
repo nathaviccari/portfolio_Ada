@@ -415,7 +415,7 @@ footer>nav>ul {
         text-align: center;
     }
 
-    .contact,
+    .contact__section,
     footer {
         display: none;
     }
