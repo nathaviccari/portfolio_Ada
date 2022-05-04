@@ -312,7 +312,6 @@ Projects */
     background-color: red;
 }
 
-
 .contact__section {
     display: flex;
 }
@@ -342,7 +341,7 @@ footer>nav>ul {
 }
 
 
-@media (max-width: 280px) {
+@media (max-width: 400px) {
     .title--mod {
         font-size: 1.875em;
 
