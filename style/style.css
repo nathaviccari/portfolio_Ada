@@ -410,7 +410,6 @@ footer>nav>ul {
 @media (max-width: 400px) {
     .title--mod {
         font-size: 1.875em;
-
     }
 
     .text--mod {
@@ -449,11 +448,12 @@ footer>nav>ul {
 
     .hello__bio {
         margin-top: 35%;
+        width: 90%;
     }
 
     .hello__img {
         margin-top: 15%;
-        width: auto;
+        width: 90%;
     }
 
     .knowledge__title,
