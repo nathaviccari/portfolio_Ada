@@ -530,6 +530,10 @@ footer {
         text-align: center;
     }
 
+.form__box{
+    height: auto;
+}
+
     .form__name,
     .form__surname {
         width: 100%;
@@ -540,6 +544,7 @@ footer {
     }
 
     .footer__text{
+        text-align: center;
         width: 80%;
     }
 }
