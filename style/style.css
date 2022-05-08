@@ -535,7 +535,11 @@ footer {
         width: 100%;
     }
 
-    footer__icons-container {
+    .footer__menu-nav {
         display: none;
+    }
+
+    .footer__text{
+        width: 80%;
     }
 }
