@@ -459,21 +459,22 @@ footer {
         width: 80%;
     }
 
+    .hello__bio {
+        margin-top: 35%;
+        width: auto;
+    }
+
+    .hello__img {
+        margin: 10%;
+        width: 80%;
+       height:100%;
+    }
+
     .knowledge__section,
     .knowledge__text,
     .projects__section {
         flex-wrap: wrap;
         width: 100%;
-    }
-
-    .hello__bio {
-        margin-top: 35%;
-        width: 90%;
-    }
-
-    .hello__img {
-        margin-top: 15%;
-        width: 90%;
     }
 
     .knowledge__title,
@@ -495,7 +496,7 @@ footer {
     }
 
     .projects__box {
-        width: 100%;
+        width: 70%;
         margin: 4%;
         padding: 4%;
     }
