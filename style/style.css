@@ -335,7 +335,7 @@ Projects */
     margin: 5% 4%;
 }
 
-.icon__link:hover {
+.icon__link:hover, .footer__icons:hover {
     color: #a66be4;
 }
 
@@ -397,13 +397,33 @@ textarea:focus {
 footer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding-top: 5%;
 }
 
-footer>nav>ul {
+.footer__menu-nav {
     display: flex;
-    margin: 10px;
-    align-self: center;
+    text-transform: uppercase;
+    margin-bottom: 4%;
+}
+
+.footer__menu-link {
+    margin-left: 40px;
+}
+
+.footer__icons-container {
+    display: flex;
+    margin: 2%;
+}
+
+.footer__icons{
+ font-size: 2em;
+ margin: 30px;
+}
+
+.footer__text{
+    margin: 2%;
 }
 
 
@@ -503,17 +523,18 @@ footer>nav>ul {
     }
 
     .contact__title,
-    .contact__text, .form__title{
+    .contact__text,
+    .form__title {
         width: 90%;
         text-align: center;
     }
 
     .form__name,
     .form__surname {
-       width: 100%;
+        width: 100%;
     }
 
-    footer {
+    footer__icons-container {
         display: none;
     }
 }
