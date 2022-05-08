@@ -41,13 +41,13 @@
         <section class="hello" id="hola">
             <div class="hello__section">
                 <div class="hello__bio">
-                    <h2 class="hello__title">¡Hola! Soy</h2>
+                    <h2 class="hello__title text--mod">¡Hola! Soy</h2>
                     <h3 class="hello__name">Natha Viccari,</h3>
-                    <p class="hello__text">Iniciante en desarrolo Web, me gusta
+                    <p class="hello__text text--mod">Iniciante en desarrolo Web, me gusta
                         los memes, soy curiosa
                         tiempo completo y estoy en busqueda del mejor flan de la
                         ciudad.</p>
-                    <button class="btn btn--m"><a href="#proyectos"> Lo que Hago</a></button>
+                    <button class="btn btn--m"><a href="#proyectos"><span class="hello__btn text--mod">Lo que Hago</span></a></button>
                 </div>
                 <img class="hello__img"
                     src="https://img-9gag-fun.9cache.com/photo/aoPOyem_700bwp.webp">
@@ -176,67 +176,118 @@
         <section class="contact" id="contacto">
             <div class="contact__section">
                 <div class="contact__box">
-                    <h2 class="title--mod">Contactame</h2>
-                    <p>Lorem ipsum dolor sit</p>
+                    <h2 class="contact__title title--mod">Contactame</h2>
+                    <p class="contact__text text--mod">Estoy estudianado programación en ADA y muy dispuesta para nuevas oportunidades de trabajo!</p>
                     <ul>
-                        <li>
-                            twitter
+                        <li class="contact__icon">
+                            <a class="icon__link" href="https://twitter.com/nathavic" target="_blank">
+                                <i class='fab fa-twitter'></i>
+                                <span class="icon__text text--mod">Twitter</span>
+                            </a>
                         </li>
-                        <li>
-                            git
+                        <li class="contact__icon">
+                            <a class="icon__link" href="https://github.com/nathaviccari" target="_blank">
+                                <i class='fab fa-github-alt'></i>
+                                <span class="icon__text text--mod">Git</span>
+                            </a>
                         </li>
-                        <li>
-                            linkedin
+                        <li class="contact__icon">
+                            <a class="icon__link" href="https://www.linkedin.com/in/nathaviccari/" target="_blank">
+                                <i class='fab fa-linkedin-in'></i>
+                                <span class="icon__text text--mod">Linkedin</span>
+                            </a>
                         </li>
-                        <li>
-                            email
+                        <li class="contact__icon">
+                            <a class="icon__link" href="mailto:nathaviccari@gmail.com" target="_blank">
+                                <i class='fa fa-envelope'></i>
+                                <span class="icon__text text--mod">e-Mail</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
+
                 <div class="form__box">
-                    <h2 class="title--mod">Escribime</h2>
+                    <h2 class="form__title title--mod">Escribime</h2>
+
                     <form action="">
-                        <div>
-                            <label for="name">Nombre</label>
+                        <div class="form__name">
+                            <label for="name"> <span class="form__text text--mod"> Nombre *</span></label>
                             <input type="text" name="name" id="name">
                         </div>
-                        <div>
-                            <label for="surname">Apellido</label>
+                        <div class="form__surname">
+                            <label for="surname"><span class="form__text text--mod"> Apellido *</span></label>
                             <input type="text" name="surname" id="surname">
                         </div>
-                        <div>
-                            <label for="email">E-mail</label>
+                        <div class="form__email">
+                            <label for="email"><span class="form__text text--mod"> e-Mail *</span></label>
                             <input type="email" name="email" id="email">
                         </div>
-                        <div>
-                            <label for="menssage">Mensaje</label>
-                            <textarea name="menssage" id="menssage" cols="30"
-                                rows="10"></textarea>
+                        <div class="form__menssage">
+                            <label for="menssage"><span class="form__text text--mod"> Mensaje *</span></label>
+                            <textarea name="menssage" id="menssage" cols="25"rows="10"></textarea>
                         </div>
-                        <input class="btn" type="submit" value="Enviar">
+                        <button class="form__btn btn btn--s" type="submit" value="Enviar"><span class="form__btn-text">Enviar</span></button>
                     </form>
                 </div>
             </div>
         </section>
         <footer>
-            <nav>
-                <ul>
-                    <li>
-                        Hola
-                    </li>
-                    <li>
-                        Conocimientos
-                    </li>
-                    <li>
-                        Proyectos
-                    </li>
-                    <li>
-                        Contacto
-                    </li>
-                </ul>
+            <nav class="footer__menu">
+              <ul class="footer__menu-nav">
+                <li>
+                  <a href="#hola" class="footer__menu-link">Hola</a>
+                </li>
+                <li>
+                  <a href="#conocimientos" class="footer__menu-link">Conocimentos</a>
+                </li>
+                <li>
+                  <a href="#proyectos" class="footer__menu-link">Proyectos</a>
+                </li>
+                <li>
+                  <a href="#contacto" class="footer__menu-link">Contactos</a>
+                </li>
+              </ul>
             </nav>
-            <p>Hecho por Natha</p>
-        </footer>
+            <ul class="footer__icons-container">
+              <li>
+                <a
+                  class="footer__icons"
+                  href="https://twitter.com/nathavic"
+                  target="_blank"
+                  ><i class='fab fa-twitter-square'></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer__icons"
+                  href="https://github.com/nathaviccari"
+                  target="_blank"
+                  ><i class='fab fa-git-square'></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer__icons"
+                  href="https://www.linkedin.com/in/nathaviccari/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a
+                  class="footer__icons"
+                  href="mailto:nathaviccari@gmail.com"
+                  target="_blank"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </li>
+            </ul>
+            <p>
+              Hecho con ✨ por Nathalia Viccari, diseños de
+              <a class="link--green" href="https://tydale.ca/" target="_blank"
+                >Ty Dale.</a
+              >
+            </p>
+          </footer>
     </body>
 
 </html>

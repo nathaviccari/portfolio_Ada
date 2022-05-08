@@ -24,6 +24,10 @@ a:visited {
     color: #000;
 }
 
+li {
+    list-style: none;
+}
+
 .menu--burger {
     display: none;
 }
@@ -93,11 +97,12 @@ button {
 .title--mod {
     color: #000000;
     text-transform: uppercase;
-    font-size: 2.375em;
+    font-size: 2em;
     font-weight: bolder;
     letter-spacing: 1px;
     margin-top: 5%;
 }
+
 
 .text--mod {
     font-size: 1em;
@@ -120,7 +125,6 @@ button {
     justify-content: flex-end;
     width: 100%;
     line-height: 50px;
-    list-style: none;
     position: fixed;
     z-index: 2;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -166,13 +170,12 @@ button {
 }
 
 .hello__text {
-    font-size: 1.2rem;
     margin: 0 2% 5% 0;
 }
 
 .hello__img {
     padding: 10% 0;
-    width:500px;
+    width: 500px;
     height: 300px;
 }
 
@@ -223,7 +226,6 @@ Knowledge */
     transform: translateY(-5px);
     box-shadow: 7px 7px 0px -1px rgba(0, 0, 0, 1);
 }
-
 
 /* *************************** 
 Projects */
@@ -317,11 +319,74 @@ Projects */
 
 .contact__section {
     background-color: #fff;
-   border: 2px solid black;
-    width: 70%;
+    border: 2px solid black;
     display: flex;
-    padding: 10%;
+    justify-content: space-around;
+    padding: 4% 6% 6% 4%;
+    margin: 0 5%;
+}
+
+.contact__text {
+    margin: 10% 0;
+    width: 70%;
+}
+
+.contact__icon {
+    margin: 5% 4%;
+}
+
+.icon__link:hover {
+    color: #a66be4;
+}
+
+.icon__text {
+    margin-left: 15px;
+    font-weight: bolder;
+}
+
+/* *************************** 
+Form */
+
+label {
+    display: block;
+    font-size: 1em;
+    margin: 5% 0;
+}
+
+input,
+textarea {
+    border: none;
+    background-color: rgba(51, 51, 51, 0.05);
+    padding: 10px;
+    width: 90%;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.form__box {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    text-align: left;
+    width: 65%;
+}
+
+.form__title {
+    margin-bottom: 7%;
+}
+
+.form__name,
+.form__surname {
+    display: inline-block;
+    width: 45%;
+}
+
+.form__name {
+    margin-right: 5%;
 
 }
 
@@ -382,13 +447,13 @@ footer>nav>ul {
         width: 100%;
     }
 
-    .hello__bio{
+    .hello__bio {
         margin-top: 35%;
     }
 
     .hello__img {
-      margin-top: 15%;
-        width:auto;
+        margin-top: 15%;
+        width: auto;
     }
 
     .knowledge__title,
@@ -405,7 +470,7 @@ footer>nav>ul {
         padding: 3%;
     }
 
-    .knowledge__img{
+    .knowledge__img {
         width: 90%;
     }
 
@@ -424,7 +489,30 @@ footer>nav>ul {
         text-align: center;
     }
 
-    .contact__section,
+    .contact__section {
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+
+    .contact__box {
+        width: 80%;
+    }
+
+    .contact__title,
+    .contact__text, .form__title{
+        width: 90%;
+        text-align: center;
+    }
+
+    .form__name,
+    .form__surname {
+       width: 100%;
+    }
+
     footer {
         display: none;
     }
