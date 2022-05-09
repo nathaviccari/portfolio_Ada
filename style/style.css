@@ -427,7 +427,7 @@ footer {
 }
 
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) {
     .title--mod {
         font-size: 1.875em;
     }
